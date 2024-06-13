@@ -17,6 +17,7 @@
                         <form method="post">
                             {% csrf_token %}
                             {{ form.as_p }}
+                            <p>Age must be between 50 and 100 years.</p>
                             <button type="submit" class="btn btn-primary">Calculate</button>
                         </form>
                         {% if principal_limit is not None %}

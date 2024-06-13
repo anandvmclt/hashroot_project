@@ -12,7 +12,20 @@ Interest Rate: The rate of interest applied to the loan, which is determined by 
 
 # The principal limit is Calculated by below formula
 
-* Principal Limit = Home Value x (1 - (Margin/100)) x (Age/100)
+* Principal Limit = Home Value x PLF
 
 Note:- Above formula is Refferd from the internet
+
+PLF - Principle Loan Factor to get from HUD website
+- https://www.hud.gov/sites/dfiles/SFH/documents/nhm_hecm_101_06_28_21.pdf
+
+# Run the project
+
+1.) install dependencies
+ - pip install -r requirements.txt
+
+2.) Run Command
+ - python manage.py runserver
+
+Note: Make sure you are in an activated virtual enviornment before starting the code.
  
