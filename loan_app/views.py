@@ -19,17 +19,8 @@ def calculate_principal_limit(age, home_value, margin):
     :param margin: Margin rate
     :return: Principal Limit
     """
-    # Constants derived from the provided data provided on loom video screen
-    base_factor = 0.5147
-    margin_factor = 0.0439
-    
-    # Calculate the normalized Principal Limit
-    principal_limit_normalized = base_factor - (margin_factor * margin)
-    
-    # Calculate the Principal Limit
-    principal_limit = home_value * principal_limit_normalized
-    
-    return principal_limit
+    return home_value * (1 - (margin / 100)) * (age / 100)
+
 
 
 def home(request):

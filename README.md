@@ -16,3 +16,10 @@ Interest Rate: The rate of interest applied to the loan, which is determined by 
 
 Note:- Above formula is Refferd from the internet
  
+# Run the project
+1.) install dependencies
+ - pip install -r requirements.txt
+2.) Run Command
+  - python manage.py runserver
+  
+Note: Make sure you are in an activated virtual enviornment before starting the code.
